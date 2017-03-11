@@ -113,7 +113,8 @@ public void PlayGame() throws FileNotFoundException
 	Game mygame = new Game();
 	Account a = new Account();
 	AccountController Ac = new AccountController();
-	Ac.Login(a);
+	// already tested
+	//Ac.Login(a);
 	Student s = new Student ();
 //	if (a.Type.equals( "Student"))
 //	{
@@ -130,7 +131,6 @@ public void PlayGame() throws FileNotFoundException
 	boolean ans=false;
 	String userAnswer;
 	Category cat= new Category();
-	Scanner in = new Scanner (System.in);
 	System.out.println("Please choose one of these categories !");
 	GameController GC = new GameController();
 	//ArrayList<String> choices = GC.AddGame();
@@ -146,9 +146,10 @@ public void PlayGame() throws FileNotFoundException
 			for(int j=0 ; j< Categories.get(i).ListOfGames.size() ; j++){
 			System.out.println(Categories.get(i).ListOfGames.get(j).Name);}
 	}
+
 	
 	String choice;
-	choice = in.next();
+	choice = in.nextLine();
 	for( int i = 0 ; i < Categories.size() ; i++)
 	{
 		if(Categories.get(i).CatName.equals(cat.CatName))
@@ -157,11 +158,12 @@ public void PlayGame() throws FileNotFoundException
 					mygame = Categories.get(i).ListOfGames.get(j);
 				}
 	}
+
 	if(mygame.GameType.equals("1"))
 	{
 		for(int i = 0;i<mygame.NumOfQuestions ;i++){
 			System.out.println(mygame.Questions.get(i).Question);
-			userAnswer = in.next();
+			userAnswer = in.nextLine();
 			if(userAnswer.equals(mygame.Questions.get(i).Answer)){
 				ans = true;
 				Score++;
@@ -178,7 +180,7 @@ public void PlayGame() throws FileNotFoundException
 			System.out.println(mygame.Questions.get(i).Question);
 			//System.out.println(choices);
 			//na2s ezay n return choices mn el add game
-			userAnswer = in.next();
+			userAnswer = in.nextLine();
 			if(userAnswer.equals(mygame.Questions.get(i).Answer)){
 				ans = true;
 				System.out.println("Correct Answer !");
@@ -197,7 +199,7 @@ public void PlayGame() throws FileNotFoundException
 	RateGame(mygame);
 	String comm;
 	System.out.println("Would you like to add a comment for this game ?");
-	comm = in.next();
+	comm = in.nextLine();
 	if(comm == "Yes")
 	{
 		String comment = s.WriteComment();
