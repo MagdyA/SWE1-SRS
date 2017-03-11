@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" ignored="0" total="5" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="75" started-at="2017-03-11T17:38:20Z" finished-at="2017-03-11T17:38:20Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="75" started-at="2017-03-11T17:38:20Z" finished-at="2017-03-11T17:38:20Z">
+      <class name="GameControllerTest">
+        <test-method status="PASS" signature="prepareAddGameInputSouce()[pri:0, instance:GameControllerTest@1efbd816]" name="prepareAddGameInputSouce" is-config="true" duration-ms="10" started-at="2017-03-11T09:38:20Z" finished-at="2017-03-11T09:38:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepareAddGameInputSouce -->
+        <test-method status="PASS" signature="AddGame()[pri:0, instance:GameControllerTest@1efbd816]" name="AddGame" duration-ms="11" started-at="2017-03-11T09:38:20Z" finished-at="2017-03-11T09:38:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddGame -->
+        <test-method status="FAIL" signature="AddGame()[pri:0, instance:GameControllerTest@1efbd816]" name="AddGame" duration-ms="5" started-at="2017-03-11T09:38:20Z" finished-at="2017-03-11T09:38:20Z">
+          <exception class="java.util.InputMismatchException">
+            <full-stacktrace>
+              <![CDATA[java.util.InputMismatchException
+	at java.util.Scanner.throwFor(Unknown Source)
+	at java.util.Scanner.next(Unknown Source)
+	at java.util.Scanner.nextInt(Unknown Source)
+	at java.util.Scanner.nextInt(Unknown Source)
+	at GameController.AddGame(GameController.java:38)
+	at GameControllerTest.AddGame(GameControllerTest.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.util.InputMismatchException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddGame -->
+        <test-method status="PASS" signature="AddGame()[pri:0, instance:GameControllerTest@1efbd816]" name="AddGame" duration-ms="7" started-at="2017-03-11T09:38:20Z" finished-at="2017-03-11T09:38:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddGame -->
+        <test-method status="PASS" signature="AddGame()[pri:0, instance:GameControllerTest@1efbd816]" name="AddGame" duration-ms="3" started-at="2017-03-11T09:38:20Z" finished-at="2017-03-11T09:38:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddGame -->
+        <test-method status="FAIL" signature="PlayGame()[pri:0, instance:GameControllerTest@1efbd816]" name="PlayGame" duration-ms="2" started-at="2017-03-11T09:38:20Z" finished-at="2017-03-11T09:38:20Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[Test not implemented]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: Test not implemented
+	at GameControllerTest.PlayGame(GameControllerTest.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PlayGame -->
+      </class> <!-- GameControllerTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
