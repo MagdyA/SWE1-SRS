@@ -7,6 +7,7 @@ import java.util.Scanner;
 public class GameController {
 	Game game;
 	ArrayList <Category> Categories = new ArrayList <Category>();
+	Scanner in = new Scanner (System.in);
 	
 	public void AddGame()
 	{
@@ -20,7 +21,6 @@ public class GameController {
 		int numOfChoices;
 		ArrayList <String> Choices = new ArrayList<String>();
 		Scanner inInt = new Scanner (System.in);
-		Scanner in = new Scanner (System.in);
 		System.out.println("Please Enter your name !");
 		mygame.TeacherName= in.nextLine();
 		System.out.println("Please Enter game name !");
@@ -35,7 +35,9 @@ public class GameController {
 		System.out.println("You have to choices : 1.True and False  2. Multiple Choices");
 		mygame.GameType = in.nextLine();
 		System.out.println("Please enter number of questions !");
-		mygame.NumOfQuestions = inInt.nextInt();
+		mygame.NumOfQuestions = in.nextInt();
+		
+		System.out.println(mygame.GameType);
 		
 		if (mygame.GameType.equals("1"))
 		{
