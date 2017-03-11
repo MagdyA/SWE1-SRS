@@ -35,8 +35,8 @@ public class GameController {
 		System.out.println("You have to choices : 1.True and False  2. Multiple Choices");
 		mygame.GameType = in.nextLine();
 		System.out.println("Please enter number of questions !");
-		mygame.NumOfQuestions = in.nextInt();
-				
+		mygame.NumOfQuestions = Integer.valueOf(in.nextLine());
+		
 		if (mygame.GameType.equals("1"))
 		{
 		
@@ -57,18 +57,18 @@ public class GameController {
 				myQuestion q = new myQuestion();
 					System.out.println("Enter the question !");
 					q.QuestionNumber = j;
-					mychoice = in.next();
+					mychoice = in.nextLine();
 					q.Question = mychoice;
 					System.out.println("Please enter the number of choices !");
-					numOfChoices = in.nextInt();
+					numOfChoices = Integer.valueOf(in.nextLine());
 					for(int i=1 ; i <= numOfChoices ; i++)
 					{
 						System.out.println("Enter Choices number " + i + " !");
-						choice = in.next();
+						choice = in.nextLine();
 						Choices.add(choice);
 					}
 					System.out.println("Please enter the right answer !");
-					q.Answer = in.next();
+					q.Answer = in.nextLine();
 					mygame.Questions.add(q);
 			}
 		
