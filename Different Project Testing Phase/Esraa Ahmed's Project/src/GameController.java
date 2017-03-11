@@ -36,9 +36,7 @@ public class GameController {
 		mygame.GameType = in.nextLine();
 		System.out.println("Please enter number of questions !");
 		mygame.NumOfQuestions = in.nextInt();
-		
-		System.out.println(mygame.GameType);
-		
+				
 		if (mygame.GameType.equals("1"))
 		{
 		
